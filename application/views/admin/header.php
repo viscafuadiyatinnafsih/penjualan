@@ -51,7 +51,7 @@ font-size: 13px;">  &nbsp;
             </li>
                 
             <li>
-                <a href="<?php echo site_url()?>/admin/datacustomer"><i class="fa fa-user fa-2x"></i> Data Customer</a>
+                <a href="<?php echo site_url()?>/admin/customer"><i class="fa fa-user fa-2x"></i> Data Customer</a>
             </li>
                     
             <li>

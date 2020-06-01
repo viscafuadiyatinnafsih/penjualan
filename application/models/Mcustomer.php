@@ -29,22 +29,22 @@ class Mcustomer extends CI_Model{
 			'no_telp'=>$this->c,
 			'email'=>$this->d,
 		);
-		$this->db->where('id_lengkap', $id_lengkap);
+		$this->db->where('id_customer', $id_customer);
 		return $this->db->update($this->table, $arrayData); 
 	}	
 	
 	public function getList(){
-		$this->db->order_by('id_lengkap',"DESC");
+		$this->db->order_by('id_customer',"DESC");
 		$query = $this->db->get($this->table);
 		return $query->result();
 	}
 	
-	public function delete($id_lengkap){
-		return $this->db->delete($this->table, array('id_lengkap'=>$id_lengkap));
+	public function delete($id_customer){
+		return $this->db->delete($this->table, array('id_customer'=>$id_customer));
 	}
 	
-	function detail($id_lengkap){
-		$condition = array("id_lengkap"=>$id_lengkap);
+	function detail($id_customer){
+		$condition = array("id_customer"=>$id_customer);
 		$query = $this->db->get_where($this->table,$condition);	
 		if($query->num_rows() > 0){
 			return $query->row();

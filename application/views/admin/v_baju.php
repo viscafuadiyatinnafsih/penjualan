@@ -1,85 +1,73 @@
 <?php $this->load->view('admin/header.php')?>
-        <!-- /. NAV SIDE  -->
+ <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
-        
-            <div class="row">
-                
-            <hr>
-            	<div class="row" align="center">
-                	<b><h2><font color="#DB709">ShoppingGo</font></h2></b>
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2><font color="#DB709">ShoppingGo</font></h2>   
+                       
+                    </div>
                 </div>
-            <hr/>
+                 <!-- /. ROW  -->
+                 <hr />
+        <div class="form-group row" align="left">
+                <div class="col-sm-12 ml-auto">
+                    <a href="<?php echo site_url()?>/admin/baju/add" class="btn btn-success">Tambah</a>
+                </div>
+        </div>    
 
-        <center><b>Daftar baju yang tersedia</b></center>
-        <br></br>
 
-		<div class="form-group row" align="left">
-            <div class="col-sm-12 ml-auto">
-               <a href="<?php echo site_url()?>/admin/add_baju" class="btn btn-success">Tambah</a>
+        <div class="row">
+            <div class="col-md-12">
+            <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Data baju yang tersedia
+                    </div>
+                <div class="panel-body">
+                     <!-- /. CARI DATA  -->
+                        <form align="right" action="" method="POST">
+                        Search : <input type="text" name="query" placeholder="cari data"/>
+                        </form><br>
+                    <div class="table-responsive">
+                        <?php if ($hasil):?>
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                            <th><center><b>No.</th>
+                            <th><center><b>Nama Baju</th>
+                            <th><center><b>Harga</th>
+                            <th><center><b>Deskripsi</th>
+                            <th><center><b>Gambar</th>
+                            <th colspan="3"><center><b>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $i=1;?>
+                            <?php foreach ($hasil as $row):?>
+                            <tr>
+                            <td><center><?php echo $i?>.</td>
+                            <td><center><?php echo $row->nama_baju?></td>
+                            <td><center>Rp.<?php echo number_format($row->harga,0,',','.')?>,-</td>
+                            <td><center><?php echo $row->deskripsi?></td>
+                             <td><center><?php echo $row->gambar?></td>
+                            <td align="center"><a class="btn btn-default" href="<?php echo site_url("admin/baju/add/$row->id_baju")?>" title="Edit"><i class="fa fa-edit "></i></a></td>
+
+                            <td align="center"><a onclick="return confirm('Yakin data anda ingin di hapus?')" class="btn btn-default" href="<?php echo site_url("admin/baju/delete/$row->id_baju")?>" title="Hapus"><i class="fa fa-trash"></i></a></td>
+                            
+                            </tr>
+                                <?php $i++?>
+                                <?php endforeach?>
+                        </tbody>
+                        </table>
+                            <?php else: ?>
+                            Tidak ada data
+                            <?php endif?>
+                </div>
+                </div>
+                </div>
+                <!--End Advanced Tables -->
             </div>
-        </div>   
-
-
-        <table id="bootstrap-data-table" class="table center table-striped table-bordered">
-          	<thead align="center">
-            <tr>
-                <th><center>No</th>
-                <th><center>Nama Pakaian</th>
-                <th><center>Harga</th>
-                <th><center>Gambar</th>
-                <th colspan ="2"><center>Aksi</th>
-    		</tr>
-            
-            <tr>
-                <th><center>1</th>
-                <th><center>jaket musin dingin</th>
-                <th><center>Rp. 300.000</th>
-                <th><center><img src="http://localhost/penjualan/assets/img/baju2.jpg" width="50px" height="50px" /></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-edit "></i></a></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-trash "></i></a></th>
-    		</tr>
-                                    
-            <tr>
-                <th><center>2</th>
-                <th><center>kaus polos wanita</th>
-                <th><center>Rp. 75.000</th>
-                <th><center><img src="http://localhost/penjualan/assets/img/baju3.jpg" width="50px" height="50px" /></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-edit "></i></a></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-trash "></i></a></th>
-    		</tr>
-                                    
-            <tr>
-                <th><center>3</th>
-                <th><center>kaus abu-abu wanita</th>
-                <th><center>Rp. 90.000</th>
-                <th><center><img src="http://localhost/penjualan/assets/img/baju4.jpg" width="50px" height="50px" /></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-edit "></i></a></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-trash "></i></a></th>
-    		</tr>
-                                    
-            <tr>
-                <th><center>4</th>
-                <th><center>sweater</th>
-                <th><center>Rp. 150.000</th>
-                <th><center><img src="http://localhost/penjualan/assets/img/baju5.jpg" width="50px" height="50px" /></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-edit "></i></a></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-trash "></i></a></th>
-    		</tr>
-                                    
-            <tr>
-                <th><center>5</th>
-                <th><center>kemeja putih pria</th>
-                <th><center>Rp. 200.000</th>
-                <th><center><img src="http://localhost/penjualan/assets/img/baju1.jpg" width="50px" height="50px" /></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-edit "></i></a></th>
-                <th><center><a class="btn btn-default" title="Edit" href=""><i class="fa fa-trash "></i></a></th>
-   			</tr>
-            </thead>
-        </table>
-
-	</div>
-	</div>
-
+        </div>
+                <!-- /. ROW  -->
 <?php $this->load->view('admin/footer.php')?>
-
-                        

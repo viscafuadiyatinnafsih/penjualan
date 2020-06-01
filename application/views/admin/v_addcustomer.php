@@ -4,7 +4,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                    <h2><font color="#DB709">ShoppingGo</font></h2>   
+                    <h2><font color="#DB709">ShoppingGo</h2>   
 
                        
                     </div>
@@ -17,31 +17,31 @@
                     <!-- Form Elements -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Data baju yang tersedia
+                            Data customer
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-12">
                                     <br>
-                                    <form role="form" method="post" action="<?= site_url()?>/admin/baju/add">
-                                        <input type="hidden" name="id_baju" required value="<?php if (@$detail){ echo @$detail->id_baju;} else { echo set_value('id_baju');}?>">
+                                    <form role="form" method="post" action="<?= site_url()?>/admin/customer/add">
+                                        <input type="hidden" name="id_customer" required value="<?php if (@$detail){ echo @$detail->id_customer;} else { echo set_value('id_customer');}?>">
 
 
                                         <div class="form-group">
-                                            <label>Nama Pakaian</label>
-                                            <input class="form-control" name="nama_baju" placeholder="Nama Baju" required value="<?php if (@$detail){ echo @$detail->nama_baju;} else { echo set_value('nama_baju');}?>" />
+                                            <label>Nama Lengkap</label>
+                                            <input class="form-control" name="nama_lengkap" placeholder="Nama Lengkap" required value="<?php if (@$detail){ echo @$detail->nama_lengkap;} else { echo set_value('nama_lengkap');}?>" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Harga</label>
-                                            <input type="number" name="harga" class="form-control" placeholder="Harga" required value="<?php if (@$detail){ echo @$detail->harga;} else { echo set_value('harga');}?>" />
+                                            <label>Alamat</label>
+                                            <input type="text" name="alamat" class="form-control" placeholder="Alamat" required value="<?php if (@$detail){ echo @$detail->alamat;} else { echo set_value('alamat');}?>" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Deskripsi</label>
-                                            <input type="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi" required value="<?php if (@$detail){ echo @$detail->deskripsi;} else { echo set_value('deskripsi');}?>" />
+                                            <label>Nomor Telepon</label>
+                                            <input type="number" name="no_telp" class="form-control" placeholder="Nomor Telepon" required value="<?php if (@$detail){ echo @$detail->no_telp;} else { echo set_value('no_telp');}?>" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Gambar</label>
-                                            <input type="file" name="gambar" class="form-control" placeholder="Gambar" required value="<?php if (@$detail){ echo @$detail->gambar;} else { echo set_value('gambar');}?>" />
+                                            <label>Email</label>
+                                            <input type="text" name="email" class="form-control" placeholder="Email" required value="<?php if (@$detail){ echo @$detail->email;} else { echo set_value('email');}?>" />
                                         </div>
                                         <br>
                                         
