@@ -16,7 +16,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/penjualan/assets/img/baju2.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/ShoppingGo/assets/img/baju2.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>jaket musim dingin</p></center>
@@ -30,7 +30,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/penjualan/assets/img/baju3.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/ShoppingGo/assets/img/baju3.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>kaus polos wanita</p></center>
@@ -44,7 +44,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/penjualan/assets/img/baju4.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/ShoppingGo/assets/img/baju4.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>kaus abu-abu wanita</p></center>
@@ -58,7 +58,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/penjualan/assets/img/baju5.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/ShoppingGo/assets/img/baju5.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>sweater</p></center>
@@ -72,7 +72,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/penjualan/assets/img/baju1.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/ShoppingGo/assets/img/baju1.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>kemeja putih pria</p></center>

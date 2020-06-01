@@ -15,7 +15,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <center><img src="http://localhost/penjualan/assets/img/baju3.jpg" width="350px" height="250px" /></center>
+                            <center><img src="http://localhost/ShoppingGo/assets/img/baju3.jpg" width="350px" height="250px" /></center>
                         </figure><br></br>
                         <div class="fh5co-text">
                              <center><a href="<?php echo site_url("customer/baju")?>" class="btn btn-warning">baju</a></center>
@@ -28,7 +28,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <center><img src="http://localhost/penjualan/assets/img/celana4.jpg" width="350px" height="250px" /></center>
+                            <center><img src="http://localhost/ShoppingGo/assets/img/celana4.jpg" width="350px" height="250px" /></center>
                         </figure><br></br>
                         <div class="fh5co-text">
                              <center><a href="<?php echo site_url("customer/celana")?>" class="btn btn-warning">celana</a></center>
