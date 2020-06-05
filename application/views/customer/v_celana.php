@@ -16,7 +16,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/ShoppingGo/assets/img/celana.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/penjualan/assets/img/celana.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>celana boxer</p></center>
@@ -30,7 +30,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/ShoppingGo/assets/img/celana1.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/penjualan/assets/img/celana1.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>celana pendek</p></center>
@@ -44,7 +44,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/ShoppingGo/assets/img/celana2.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/penjualan/assets/img/celana2.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>celana pria</p></center>
@@ -58,7 +58,7 @@
                     <a href="" class="fh5co-card-item">
                         <figure>
                             <div class="overlay"><i class="ti-shopping-cart" value="Tai"></i></div>
-                            <img src="http://localhost/ShoppingGo/assets/img/celana4.jpg" width="350px" height="250px" />
+                            <img src="http://localhost/penjualan/assets/img/celana4.jpg" width="350px" height="250px" />
                         </figure>
                         <div class="fh5co-text">
                             <center><p>celana wanita</p></center>
